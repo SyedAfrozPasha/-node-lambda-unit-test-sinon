@@ -32,7 +32,7 @@ describe("FetchSearchResult Lambda Unit Test", () => {
     });
 
     // Test Cases
-    it("Request with email id only", async () => {
+    it("Request with valid searchText", async () => {
       // Call the lambda function -> Syntax -> lambda.handler(event)
       let result = await lambda.handler(
         validInput() // event
